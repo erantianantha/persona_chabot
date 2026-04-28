@@ -66,7 +66,10 @@ app.post('/api/chat', async (req, res) => {
       },
     })
 
-    const reply = result.response.text()?.trim()
+    let reply = result.response.text()?.trim() || ''
+
+    // Strip out any <thought>...</thought> blocks if the model generated them
+    reply = reply.replace(/<thought>[\s\S]*?<\/thought>/gi, '').trim()
 
     if (!reply) {
       return res.status(502).json({
