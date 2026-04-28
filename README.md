@@ -10,13 +10,16 @@ This project heavily emphasizes **Prompt Engineering**—using Chain-of-Thought 
 
 ---
 
-## 📸 Screenshots
+## 📸 UI & Features
 
-*(Replace these placeholders with actual deployed screenshots)*
-- [Desktop UI Screenshot Here]
-- 
+The application features a fully responsive, modern glassmorphism UI with:
+- Dynamic Persona Switcher
+- Typing Indicators & Interactive Suggestion Chips
+- Auto-scrolling chat history
+- Mobile-first CSS optimizations
 
-
+*See the live deployment below to interact with the UI.*
+https://persona-chabot.vercel.app
 ---
 
 ## ⚡ Tech Stack
@@ -87,8 +90,8 @@ npm run dev
 
 ## 🌐 Deployment Links
 
-- **Live Frontend (Vercel):** *[Insert Deployed Link Here]*
-- **Live Backend (Render):** *[Insert Deployed Link Here]*
+- **Live Frontend (Vercel):** https://persona-chabot.vercel.app
+- **Live Backend (Render):** https://persona-chabot.onrender.com
 
 ### Deployment Steps:
 1. **Deploy Backend (Render):**
