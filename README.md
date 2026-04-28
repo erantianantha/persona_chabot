@@ -45,13 +45,21 @@ The app includes persona switching, per-persona quick-start chips, typing indica
    PORT=8787
    ```
 
-4. Start both frontend and backend:
+4. Start the backend server:
 
    ```bash
+   cd backend
+   npm start
+   ```
+
+5. In a new terminal, start the frontend:
+
+   ```bash
+   cd frontend
    npm run dev
    ```
 
-5. Open the local app URL shown by Vite (typically `http://localhost:5173`).
+6. Open the local app URL shown by Vite (typically `http://localhost:5173`).
 
 ## Prompt Authoring Workflow
 
