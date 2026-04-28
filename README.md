@@ -90,7 +90,18 @@ npm run dev
 - **Live Frontend (Vercel):** *[Insert Deployed Link Here]*
 - **Live Backend (Render):** *[Insert Deployed Link Here]*
 
-*(Note: Both frontend and backend are completely configured to be deployed on serverless and PaaS providers. Ensure that \`GEMINI_API_KEY\` is added to the environment variables on the backend hosting platform.)*
+### Deployment Steps:
+1. **Deploy Backend (Render):**
+   - Connect your GitHub repo to Render and choose "Web Service".
+   - Set **Root Directory** to `backend`.
+   - Add Environment Variables: `GEMINI_API_KEY` (your key) and `GEMINI_MODEL` (`gemini-flash-latest`).
+   - Copy the deployed Render URL (e.g., `https://my-backend.onrender.com`).
+2. **Deploy Frontend (Vercel):**
+   - Connect your GitHub repo to Vercel.
+   - Set **Root Directory** to `frontend`.
+   - Add Environment Variable: `VITE_API_URL` and paste your deployed Render URL (e.g., `https://my-backend.onrender.com`).
+
+*(Note: Ensure there are no trailing slashes at the end of the `VITE_API_URL`.)*
 
 ---
 

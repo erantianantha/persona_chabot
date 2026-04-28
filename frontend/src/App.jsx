@@ -88,7 +88,8 @@ function App() {
     setIsLoading(true)
 
     try {
-      const response = await fetch('/api/chat', {
+      const API_BASE = import.meta.env.VITE_API_URL || ''
+      const response = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
