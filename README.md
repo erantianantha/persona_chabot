@@ -38,20 +38,25 @@ https://persona-chabot.vercel.app
 
 The repository is built as a clean, decoupled monorepo:
 
-\`\`\`text
-root/
- ├── frontend/          # React frontend application
- │    ├── src/          # Components, Hooks, and API calls
- │    └── package.json  # Frontend dependencies
- ├── backend/           # Express backend server
- │    ├── index.js      # Core API endpoints (/chat, /health)
- │    ├── personas.js   # Engineered Prompts & Metadata
- │    └── package.json  # Backend dependencies
- ├── prompts.md         # Detailed prompt engineering documentation
- ├── reflection.md      # 400-word assignment reflection
- ├── README.md          # Project documentation
- └── .env.example       # Template for environment variables
-\`\`\`
+```text
+persona_chatbot/
+ ├── backend/                 # Node.js + Express backend server
+ │    ├── index.js            # Core API endpoints (/chat, /health)
+ │    ├── personas.js         # Engineered Prompts & Metadata
+ │    └── package.json        # Backend dependencies
+ ├── frontend/                # React frontend application
+ │    ├── public/             # Static public assets (icons, etc.)
+ │    ├── src/                # Components, Styles, and main logic
+ │    │    ├── App.jsx        # Main Chatbot UI component
+ │    │    ├── index.css      # Core styles & variables
+ │    │    └── main.jsx       # React application entry point
+ │    ├── package.json        # Frontend dependencies
+ │    └── vite.config.js      # Vite build configuration
+ ├── prompts.md               # Detailed prompt engineering documentation
+ ├── reflection.md            # 400-word assignment reflection
+ ├── README.md                # Project documentation
+ └── .env.example             # Template for environment variables
+```
 
 ---
 
