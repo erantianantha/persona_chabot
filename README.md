@@ -20,6 +20,9 @@ The application features a fully responsive, modern glassmorphism UI with:
 
 *See the live deployment below to interact with the UI.*
 https://persona-chabot.vercel.app
+
+![Persona Chatbot Screenshot](./screenshot.png)
+
 ---
 
 ## ⚡ Tech Stack
